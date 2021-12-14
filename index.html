@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Portifólio</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            @media screen and (max-width:900px) {
+                .column{
+                    width: 50%;
+                }
+            }
+            @media screen and (max-width:600px) {
+                .column{
+                    width: 100%;
+                }
+            }
+            body{
+                background-color: rgb(255, 242, 183);
+                margin-left: 3%;
+                padding: 3%;
+                font-family: Arial;
+            }
+            .main{
+                max-width: 1000px;
+                margin: auto;
+            }
+            .row{
+                margin: 8px -16px;
+            }
+            .row,.row>.column{
+                padding: 9px;
+            }
+            .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .column{
+                float:left;
+                width: 33%;
+            }
+            .content{
+                background-color: white;
+                padding: 4%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1>Portifólio</h1>
+            <hr/>
+            <h3>Matheus Henrique de Oliveira</h3>
+            <p>Aluno de Engenharia de Software do Instituto Ferederal do Paraná de Paranavaí - IFPR.</p>
+            <div>
+                Contatos:
+                <br/>
+                    Telefone: +55 (44) 00000-0000
+                <br/>
+                    E-mail: mthws.henrique@hotmail.com
+                <br/>
+                CPF: 000.000.000-00
+            </div> 
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                        <img src="./images/imagem5.png" alt="Imagem de foto de perfil docriador do portifólio." style="width: 100%;">
+                        <h4>Foto de Perfil</h4>
+                        <p>Experiência como Jovem Aprendiz no setor administrativo da empresa Podium Alimentos e estagiário no setor do T.I. no Colégio Paroquial de Paranavaí.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="./images/imagem3.png" alt="Imagem relacionada a avaliação de POO onde era necessário criar uma loja com funções de cadstro de cliente, produto e venda." style="width: 100%;">
+                        <h4>Lojinha POO</h4>
+                        <p>Loja simples feita 100% em Java pelos integrantes André Luiz, Adrieli Kethin e Matheus Henrique de Oliveira, com funções de cadastro de cliente,cadastro de produto e venda. </p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="./images/imagem4.png" alt="Atividade avaliativa da matéria de Programação orientada a Objeto." style="width: 100%;">
+                        <h4>Calculadora POO </h4>
+                        <p>Calculadora com operações matemáticas específicas, descritas na imagem acima.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <img src="./images/imagem1.png" alt="Imagem relacionada a uma entrevista de emprego na Empresa GrndChef, tela de 'Relatório de Promoções'." style="width: 100%;">
+                <h4>Relatório de Promoções</h4>
+                <p>Tela de "Relatório de Promoções" com gráficos interativos, usando a linguagem JavaScript e o Framework Vue.js para a entrevista na empresa GrandChef.</p>
+            </div>
+        </div>
+    </body>
+</html> 
